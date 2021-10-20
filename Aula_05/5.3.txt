@@ -1,0 +1,12 @@
+
+db.funcionario.insertOne({"Cpf": "123123123", "Primeiro_Nome": "João", "Ultimo_Nome": "Silva", "Salario": 14000, "Data_Nascimento": new Date("1970-02-02")})
+
+
+{"Cpf":"983983983"
+,"Primeiro_Nome": "Julio"
+,"Ultimo_nome": "Pinheiro"
+,"Salario": 14000
+,"Data_Nascimento": "1974-04-05"
+,"Sexo":"M"}
+
+db.funcionario.insertOne({"_id": "434434434", "Cpf": "434434434", "Primeiro_Nome": "Carmem", "Ultimo_Nome": "Alcantara", "Salario": 8000, "Data_Nascimento": new Date("1972-07-18"), "Sexo": "F"})

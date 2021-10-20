@@ -1,0 +1,4 @@
+
+-- NOME DOS FUNCIONARIOS QUE NÃO TEM DEPENDENTES
+
+db.funcionario.find({Dependentes: {$exists: false}},{"_id": 0, "Primeiro_Nome": 1, "Nome_Meio": 1, "Ultimo_Nome": 1})

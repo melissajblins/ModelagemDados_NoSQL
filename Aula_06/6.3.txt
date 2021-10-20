@@ -1,0 +1,6 @@
+db.funcionario.find({},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1, "Numero_Departamento": 1, "Sexo": 1})
+db.funcionario.find({"Numero_Departamento": "5"},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1, "Numero_Departamento": 1, "Sexo": 1})
+db.funcionario.find({"Numero_Departamento": "5", "Sexo": "M"},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1, "Numero_Departamento": 1, "Sexo": 1})
+db.funcionario.find({$and: [{"Numero_Departamento": "5"}, {"Sexo": "M"}]},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1, "Numero_Departamento": 1, "Sexo": 1})
+db.funcionario.find({$or: [{"Numero_Departamento": "5"}, {"Sexo": "M"}]},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1, "Numero_Departamento": 1, "Sexo": 1})
+db.funcionario.find({$and: [{"Salario": {$gt:30000}}, {"Sexo": "M"}]},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1, "Numero_Departamento": 1, "Sexo": 1})

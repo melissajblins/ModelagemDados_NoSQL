@@ -1,0 +1,12 @@
+db.funcionario.find({"Sexo": "M"},{"_id": 0,"Primeiro_Nome": 1, "Ultimo_Nome": 1, "Sexo": 1}).sort({"Primeiro_Nome": -1})
+db.funcionario.find({},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1})
+db.funcionario.find({"Salario": 31000},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1})
+db.funcionario.find({"Salario": {$gte: 31000}},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1})
+db.funcionario.find({"Salario": {$gte: 31000}},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1, "Data_Nascimento": 1})
+db.funcionario.find({"Data_Nascimento": {$gte: new Date("1990-01-01")}},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1, "Data_Nascimento": 1})
+db.funcionario.find({"Primeiro_Nome": {$in: ["Fatima","Tonico"] }},{"_id": 0,"Primeiro_Nome": 1, "Salario": 1, "Data_Nascimento": 1})
+
+$gt
+$gte
+$lt
+$lte
